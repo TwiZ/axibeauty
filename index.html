@@ -23,7 +23,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
       <div class="container">
-        <a class="navbar-brand" href="#">Axi Beauty Makeup Koszalin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,7 +30,6 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
@@ -44,13 +42,14 @@
         </div>
       </div>
     </nav>
-
-    <!-- Page Content -->
-    <div class="container">
+      
 
       <!-- Portfolio Item Heading -->
-      <h1 class="my-4">Axi Beauty - Aleksandra Barańska</small>
-      </h1>
+    <!-- Page Content -->
+    <div class="container">
+      <h1 class="my-4" style="font-family: 'Indie Flower', cursive;"><img src="images/logo-new.png" alt="Axi Beauty"> - Makeup Koszalin</h1>
+        <div  id="pjax-container">
+
 
       <!-- Portfolio Item Row -->
       <div class="row">
@@ -83,18 +82,6 @@
 
         <div class="col-md-3 col-sm-6 mb-4">
           <a href="#">
-            <img class="img-fluid" src="images/demo1.jpg" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="images/demo2.jpg" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
             <img class="img-fluid" src="images/demo3.jpg" alt="">
           </a>
         </div>
@@ -105,23 +92,40 @@
           </a>
         </div>
 
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/demo1.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="images/demo5.jpg" alt="">
+          </a>
+        </div>
+
       </div>
       <!-- /.row -->
-
+</div>
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Bartosz Barański 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Bartosz Barański (+48 509 772 071) 2018</p>
       </div>
       <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/jquery.pjax.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(document).pjax('a', '#pjax-container');
+    </script> 
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower" rel="stylesheet">
 
   </body>
 
